@@ -1,0 +1,29 @@
+The <!DOCTYPE html> declaration specifies that the document type is HTML5.
+The <html> element represents the root of an HTML document.
+The <head> element contains metadata about the document, such as the character encoding and the title.
+The <meta> elements specify the character encoding and the viewport settings for responsive design.
+The <title> element sets the title of the document, which appears in the browser's title bar or tab.
+The <link> element references an external CSS file (styles.css) for styling the HTML content.
+The <body> element represents the content of the HTML document.
+The <div> element with the class "box" and the ID "heading" represents a container for the heading section.
+The <h1> element displays the value of listTitle, which is passed from the server-side code (EJS template).
+The second <div> element with the class "box" represents a container for the to-do list items.
+The <% newListItems.forEach(element => { %> is an EJS tag that starts a loop to iterate over newListItems.
+The <div> element with the class "item" represents an individual to-do list item.
+The <input> element with type="checkbox" allows the user to mark the item as completed.
+The <p> element displays the current element value from the loop, representing a to-do list item.
+The <% }); %> is an EJS tag that ends the loop.
+The <form> element with action="/" method="post" represents a form for adding new items to the to-do list.
+The <input> element with type="text" allows the user to input a new item.
+The <button> element with type="submit" triggers the form submission.
+The name="newItem" attribute is used to identify the input value in the server-side code.
+The placeholder="New Item" attribute provides a placeholder text for the input field.
+The autocomplete="off" attribute disables browser autocomplete for the input field.
+The autofocus attribute sets the input field to receive focus when the page loads.
+The name="list" value=<%= listTitle %> attribute is used to identify the current list title in the server-side code.
+The + symbol inside the button represents the submit action to add a new item to the list.
+These comments explain the purpose and functionality of each element and attribute in the HTML code.
+
+
+
+

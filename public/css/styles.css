@@ -1,0 +1,117 @@
+html {
+  /* The html selector sets the background color and background image for the HTML document. It also defines the minimum height and font family. */
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  /* The h1 selector sets the color and padding for the heading element. */
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  /* The .box selector styles the container element with a maximum width, margin, background color, border radius, and box shadow. */
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  /* The #heading selector styles the heading container with a background color and text alignment. */
+  background-color: #A683E3;
+  text-align: center;
+}
+
+.item {
+  /* The .item selector styles the individual to-do list item with a minimum height, flex display, alignment, and border bottom. */
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  /* The :last-child pseudo-class selector targets the last item to remove its bottom border. */
+  border-bottom: 0;
+}
+
+input:checked+p {
+  /* The input:checked+p selector styles the paragraph element that comes after a checked checkbox, adding a line-through text decoration and a specific color. */
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  /* The input[type="checkbox"] selector styles the checkboxes with a margin. */
+  margin: 20px;
+}
+
+p {
+  /* The p selector styles the paragraphs within the items with margin, padding, font size, font weight, and color. */
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form {
+  /* The form selector styles the form element with text alignment and margin-left. */
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  /*  The button selector styles the button element with specific dimensions, border radius, border color, background color, font color, font size, padding, and border width.*/
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  /* The input[type="text"] selector styles the text input element with text alignment, height, top positioning, border, background, font size, font weight, and width. */
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  /*  The input[type="text"]:focus selector styles the text input when it is focused, removing the outline and adding a box shadow.*/
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  /*  The ::placeholder selector styles the placeholder text of input elements with color and opacity.*/
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  /*  The footer selector styles the footer element with color and text alignment.*/
+  color: red;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; /* Adjust this value to set the height of the footer */
+  line-height: 40px;
+}
